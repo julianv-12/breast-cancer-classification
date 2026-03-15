@@ -59,3 +59,49 @@ The analysis workflow includes:
 ### Logistic Regression
 
 Accuracy: **0.98**
+
+### Random Forest
+
+Accuracy: **0.96**  
+ROC AUC: **0.993**
+
+Both models show strong performance in distinguishing malignant from benign tumors.
+
+---
+
+## Feature Importance
+
+The Random Forest model identified several important tumor characteristics:
+
+- worst perimeter
+- worst area
+- worst concave points
+- mean concave points
+- worst radius
+
+These features are associated with tumor size and irregular shape, which are known indicators of malignancy.
+
+---
+
+## Example Visualization
+
+### ROC Curve Comparison
+
+![ROC Curve](figures/roc_curve_comparison.png)
+
+### Feature Importance
+
+![Feature Importance](figures/top10_feature_importance_rf.png)
+
+---
+
+## Technologies Used
+
+- Python
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+- Jupyter Notebook
+
+---
